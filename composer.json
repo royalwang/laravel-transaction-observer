@@ -1,0 +1,32 @@
+{
+    "name": "mpyw/laravel-transaction-observer",
+    "description": "Observe delayed events and fire them after ALL transactions are done.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mpyw",
+            "email": "ryosuke_i_628@yahoo.co.jp"
+        }
+    ],
+    "keywords": ["laravel", "transaction", "event", "commit", "rollback", "delay", "dispatch"],
+    "autoload": {
+        "psr-4": {
+            "mpyw\\LaravelTransactionObserver\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\": "tests/App/",
+            "": "tests/"
+        }
+    },
+    "require": {
+        "php": "^5.5 || ^7.0",
+        "laravel/framework": "^5.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.5",
+        "php-coveralls/php-coveralls": "^1.0"
+    }
+}
